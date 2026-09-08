@@ -1,0 +1,7 @@
+[Unit]
+Description=Disk/memory healthcheck
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/healthcheck.env
+ExecStart=/usr/local/bin/healthcheck.sh
